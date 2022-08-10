@@ -13,6 +13,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { InventoriesComponent } from './components/inventories/inventories.component';
 import { HomeComponent } from './components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProvidersComponent,
     ProductsComponent,
     InventoriesComponent,
-    HomeComponent
+    HomeComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
