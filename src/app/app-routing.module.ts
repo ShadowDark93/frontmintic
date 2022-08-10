@@ -17,26 +17,30 @@ const routes: Routes = [
   {
     path: '/register',
     component: RegisterComponent
-  },{
+  },
+  {
     path: '/home',
-    component: HomeComponent
+    component: HomeComponent,
+    children: [
+      {
+        path: '/clients',
+        component: ClientsComponent
+      },
+      {
+        path: '/providers',
+        component: ProvidersComponent
+      },
+      {
+        path: '/inventories',
+        component: InventoriesComponent
+      },
+      {
+        path: '/products',
+        component: ProductsComponent
+      },
+    ]
   },
-  {
-    path: '/clients',
-    component: ClientsComponent
-  },
-  {
-    path: '/providers',
-    component: ProvidersComponent
-  },
-  {
-    path: '/inventories',
-    component: InventoriesComponent
-  },
-  {
-    path: '/products',
-    component: ProductsComponent
-  },
+
 ];
 
 @NgModule({
