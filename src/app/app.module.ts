@@ -11,6 +11,8 @@ import { ClientsComponent } from './components/clients/clients.component';
 import { ProvidersComponent } from './components/providers/providers.component';
 import { ProductsComponent } from './components/products/products.component';
 import { InventoriesComponent } from './components/inventories/inventories.component';
+import { HomeComponent } from './components/home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { InventoriesComponent } from './components/inventories/inventories.compo
     ClientsComponent,
     ProvidersComponent,
     ProductsComponent,
-    InventoriesComponent
+    InventoriesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
